@@ -1,10 +1,9 @@
 def saver(func):
     def wrapped(*args, **kwargs):
         t = func.__name__ + '.txt'
-        f = open(t, 'w')
         result = func(*args, **kwargs)
-        f.write(str(result))
-        f.close
+        with open(t, 'w') as f:
+            f.write(str(result))
         return result
     return wrapped
 
