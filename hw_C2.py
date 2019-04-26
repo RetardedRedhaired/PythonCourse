@@ -1,6 +1,6 @@
 a = input('Please, enter number: ')
 b = 0
-c = 0
+c = 1
 for i in a:
     b += int(i)
     c = c*int(i)
