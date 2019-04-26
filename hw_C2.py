@@ -1,5 +1,7 @@
 a = input('Please, enter number: ')
 b = 0
+c = 0
 for i in a:
     b += int(i)
-print(f'b = {b}')
+    c = c*int(i)
+print(f'Sum of digits is {b}, multiple of digits is {c}')
