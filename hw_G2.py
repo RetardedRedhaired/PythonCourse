@@ -1,3 +1,5 @@
+import math
+
 def prime(number):
     c = range(1, number)
     for a in c:
